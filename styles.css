@@ -1,0 +1,62 @@
+table {
+    border-collapse: collapse;
+    width: 80%; 
+    max-width: 800px; /* Prevents too wide tables */
+    margin: 20px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+th {
+  background-color: #4caf50;
+  color: white;
+}
+
+#header-one {
+  text-align: center;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    table {
+      width: 95%; /* Adjust width for tablets and small screens */
+    }
+  
+    th,
+    td {
+      padding: 10px; /* Adjust padding */
+      font-size: 14px; /* Smaller text */
+    }
+  
+    button {
+      width: 100%; /* Make buttons full-width on small screens */
+    }
+  }
+  
+  /* For very small screens (mobile devices) */
+  @media screen and (max-width: 480px) {
+    table {
+      width: 100%; /* Make table use full width */
+    }
+  
+    th,
+    td {
+      padding: 8px; /* Smaller padding for mobile */
+      font-size: 12px; /* Adjust text size further */
+    }
+  
+    /* Keep the table layout intact without block-level td elements */
+    td input {
+      width: 100%; /* Make inputs responsive and fill the cell */
+    }
+  
+    /* Add some margin and padding adjustments for buttons */
+    button {
+      width: 100%; /* Full width buttons */
+      font-size: 16px; /* Slightly larger buttons */
+    }
+  }
